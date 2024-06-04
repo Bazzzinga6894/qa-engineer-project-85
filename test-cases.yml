@@ -19,10 +19,39 @@
   requirement: |
     
   prerequisites: |
-    .
+    
   test-data: |
     
   steps:
     - 
   expected-result: |
     
+- summary: |
+    Тестирование первоначальной загрузки
+  requirement: |
+    Загрузка всех блоков и отсутствие ошибок в загрузке
+  prerequisites: |
+    - 
+  test-data: |
+    - 
+  steps:
+    - Открываем Devtools, вкладка Network
+    - Открываем страницу https://codebattle.hexlet.io/
+  expected-result: |
+    Отсутствие ошибок в загрузке (статус failed)
+
+- summary: |
+    Проверка создания игры против бота
+  requirement: |
+    Успешное создание игры против бота
+  prerequisites: |
+    Открыта главная страница сайта
+  test-data: |
+    -
+  steps:
+    - Нажимаем на кнопку "Create a game"
+    - Выбираем уровень сложности (Level)
+    - Нажимаем на кнопку "With a bot"
+    - Нажимаем "Create battle"
+  expected-result: |
+   Открвается страница игры со случайным заданием, против бота
