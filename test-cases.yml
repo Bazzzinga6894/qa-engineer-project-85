@@ -4,7 +4,7 @@
   requirement: |
     При вводе корректной пары логин/пароль пользователь успешно авторизируется
   prerequisites:
-    Открыта страница логина: https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+    Открыта страница логина: "https://codebattle.hexlet.io/session/new?locale=en&next=%2F"
   test-data: |
     email = sergey6894@gmail.com Пароль = Bazzzinga!
   steps:
@@ -19,7 +19,7 @@
   requirement: |
     При неправильном email или пароле пользователь должен получить сообщение об ошибке
   prerequisites:
-    Открыта страница логина: https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+    Открыта страница логина: "https://codebattle.hexlet.io/session/new?locale=en&next=%2F"
   test-data: |
     email = hexlet Пароль = badpass
   steps:
